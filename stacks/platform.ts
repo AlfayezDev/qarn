@@ -6,9 +6,9 @@ import {
     CacheHeaderBehavior,
     CacheCookieBehavior,
 } from "aws-cdk-lib/aws-cloudfront";
-export function Platform({ stack, app }: StackContext) {
+export default function Platform({ stack, app }: StackContext) {
 
-    const site = new NextjsSite(stack, "platform_site", {
+    const site = new NextjsSite(stack, "platform-site", {
         path: "apps/platform",
         bind: [
             new Config.Secret(stack, "CLERK_SECRET_KEY"),
@@ -40,13 +40,13 @@ export function Platform({ stack, app }: StackContext) {
                 app.stage === "dev"
                     ? "https://d3iqc38eggjivo.cloudfront.net"
                     : app.stage === "preview"
-                        ? "https://d2fzzct17fas0r.cloudfront.net"
+                        ? "https://d2scvyd9ofhm5o.cloudfront.net"
                         : "http://localhost:3000",
             NEXTJS_URL:
                 app.stage === "dev"
                     ? "https://d3iqc38eggjivo.cloudfront.net"
                     : app.stage === "preview"
-                        ? "https://d2fzzct17fas0r.cloudfront.net"
+                        ? "https://d2scvyd9ofhm5o.cloudfront.net"
                         : "http://localhost:3000",
         },
 

@@ -1,5 +1,6 @@
 packages:
   - apps/platform
+  - apps/standard
   - packages/**/*
   - "!**/.next/**"
   - "!**/dist/**"

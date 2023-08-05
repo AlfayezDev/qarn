@@ -9,8 +9,8 @@
     "type-check": "tsc --noEmit",
     "with-env": "dotenv -e ../../.env._local --",
     "dev": "sst bind next dev",
-    "build": "sst bind next build",
-    "start": "sst bind next start"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@clerk/backend": "^0.27.0",

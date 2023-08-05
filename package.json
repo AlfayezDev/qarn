@@ -27,7 +27,7 @@
     "datadog-cdk-constructs-v2": "^1.7.4",
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "sst": "2.22.11",
+    "sst": "^2.23.3",
     "turbo": "^1.10.12",
     "typescript": "^5.1.6"
   }
