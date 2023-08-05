@@ -1,0 +1,14 @@
+2023-08-05T02:04:20.206Z   +215ms [debug] Config loaded {"version":"2.22.11","cdkVersion":"2.84.0","constructsVersion":"10.1.156","config":{"name":"qarn","region":"us-east-1","role":"default","ssmPrefix":"/qarn","stage":"preview"},"metafile":{"inputs":{"sst.config.ts":{"bytes":258,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"./stacks/platform","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1691201060172.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":168}},"bytes":350}}},"paths":{"config":"/Users/mohammedalfaiez/tasweq/sst.config.ts","root":"/Users/mohammedalfaiez/tasweq","out":"/Users/mohammedalfaiez/tasweq/.sst","artifacts":"/Users/mohammedalfaiez/tasweq/.sst/artifacts"}}
+2023-08-05T02:04:20.974Z   +768ms [debug] Using AWS profile 
+2023-08-05T02:04:20.984Z    +10ms [debug] Created AWS client IoTClient
+2023-08-05T02:04:20.984Z     +0ms [debug] Getting IoT endpoint
+2023-08-05T02:04:21.527Z   +543ms [debug] Using IoT endpoint: a1oemj5v3r0tqo-ats.iot.us-east-1.amazonaws.com
+2023-08-05T02:04:21.529Z     +2ms [debug] Initializing bootstrap context
+2023-08-05T02:04:21.530Z     +1ms [debug] Created AWS client CloudFormationClient
+2023-08-05T02:04:22.274Z   +744ms [debug] Loaded bootstrap status
+2023-08-05T02:04:22.274Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.2","bucket":"sstbootstrap-useast124d14e4b-1g2ilexkwdbxt"}
+2023-08-05T02:04:22.275Z     +1ms [debug] Created AWS client S3C2023-08-05T02:04:18.311Z   +103ms [debug] Generating types in /Users/mohammedalfaiez/tasweq/.sst/types
+2023-08-05T02:04:18.313Z     +2ms [debug] Running 1 deferred tasks with concurrency: 9
+2023-08-05T02:04:18.313Z     +0ms [debug] Running "npx --yes open-next@2.0.5 build" script
+05T02:04:23.990Z   +790ms [debug] Created AWS client STSClient
+2023-08-05T02:04:24.642Z   +652ms [debug] Failed to assume arn:aws:iam::378990199172:role/preview-qarn-Platform-platformsiteServerFunctionSe-4BQM4S9NZOFC. {"name":"AccessDenied","$fault":"client","$metadata":{"httpStatusCode":403,"requestId":"a020dd7f-eb63-4720-b76a-91e369ccdf11","attempts":1,"totalRetryDelay":0},"Type":"Sender","Code":"AccessDenied","message":"User: arn:aws:iam::378990199172:user/qarn-sst is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::378990199172:role/preview-qarn-Platform-platformsiteServerFunctionSe-4BQM4S9NZOFC"}

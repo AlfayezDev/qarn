@@ -1,0 +1,7 @@
+packages:
+  - apps/platform
+  - packages/**/*
+  - "!**/.next/**"
+  - "!**/dist/**"
+  - "!**/.open-next/**"
+  - "!.sst/**/*"

@@ -1,0 +1,34 @@
+{
+  "name": "qarn",
+  "private": true,
+  "engines": {
+    "node": ">=v18.16.1"
+  },
+  "packageManager": "pnpm@8.6.6",
+  "scripts": {
+    "build": "turbo build",
+    "sst": "sst",
+    "clean": "git clean -xdf node_modules dist .next .sst pnpm-lock.yaml",
+    "clean:workspaces": "turbo clean",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push db:generate",
+    "dev": "FORCE_COLOR=1 turbo dev --parallel",
+    "dev:web": "turbo dev --parallel --filter !@qarn/expo --filter !@qarn/db",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
+    "lint": "turbo lint && manypkg check",
+    "lint:fix": "turbo lint:fix && manypkg fix",
+    "type-check": "turbo type-check"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@manypkg/cli": "^0.21.0",
+    "@types/prettier": "^3.0.0",
+    "aws-cdk-lib": "^2.84.0",
+    "datadog-cdk-constructs-v2": "^1.7.4",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "sst": "2.22.11",
+    "turbo": "^1.10.12",
+    "typescript": "^5.1.6"
+  }
+}
